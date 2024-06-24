@@ -39,7 +39,7 @@ spec:
                 name: {{ include "query-exporter-helm.fullname" . }}-secretmap
           volumeMounts:
             - name: exporter-config-volume
-              mountPath: /config.yaml
+              mountPath: /config/config.yaml
               subPath: config.yaml
           ports:
             - name: http
